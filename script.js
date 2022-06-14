@@ -15,7 +15,7 @@
   })
 
   cw1.addEventListener("click", function () {
-    answer.innerHTML="Ładowanie...";
+    answer.innerHTML="TRWA ŁADOWANIE";
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(response=>response.json())
         .then(function (dane){
@@ -32,7 +32,12 @@
   })
 
   cw2.addEventListener("click", function () {
-     //TODO implement it
+    answer.innerHTML="TRWA ŁADOWANIE";
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(respone=>response.json())
+    .thn(function(dane){
+    NowaLinia(dane)
+    })
   })
 
   cw3.addEventListener("click", function () {
